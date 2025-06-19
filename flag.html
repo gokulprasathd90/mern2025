@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indian Flag with Chakra Image</title>
+  <style>
+    .flag {
+      width: 360px;
+      height: 180px;
+      border: 2px solid #222;
+      margin: 40px auto;
+      box-shadow: 0 2px 8px #0002;
+      position: relative;
+      overflow: hidden;
+    }
+    .saffron, .white, .green {
+      height: 60px;
+      width: 100%;
+    }
+    .saffron { background: #FF9933; }
+    .white { background: #fff; position: relative; }
+    .green { background: #138808; }
+    .chakra-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 56px;
+      height: px;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="flag">
+    <div class="saffron"></div>
+    <div class="white"></div>
+    <div class="green"></div>
+    <img class="chakra-img" src="chakra.jpg">
+  </div>
+</body>
+</html>
