@@ -4,13 +4,11 @@ import './navbar.css';
     return (
         <div>
             <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>     
-                    <li><a href="/skills">Skills</a></li>
-                    <li><a href="/contact">Contact</a></li> 
-                  
-                </ul>
+                <link to='/' classname='nav-link'>Home</link>
+                <link to='/about' classname='nav-link'>About</link> 
+                <link to='/skills' classname='nav-link'>Skills</link>
+                <link to='/contact' classname='nav-link'>Contact</link>
+                
             </nav>
         </div>
     )
