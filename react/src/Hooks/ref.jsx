@@ -1,15 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 const Ref = () => {
     const [count,setCount] = React.useState(0);
     const value = React.useRef(0);
-    
-    const handleIncrement = () => {
-      setCount(count+1);
-    }
-    const handleValueIncrement = () => {
-        value.current += 1;
-
-    }
+    useEffect(() => {
+        setTimeout(() => {
+            value.current = value.current+1}, 1000);
+        })
     return (
         <div>
             <h1>
